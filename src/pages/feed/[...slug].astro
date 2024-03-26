@@ -70,7 +70,7 @@ if (sortPosts[currentPostIndex - 1]) {
             title={nextPost.data.title}
           >
             <i class="ri-arrow-left-s-fill"/>
-            上一条动态
+            Previous Feed
           </a>
         ) : (
           <div/>
@@ -82,7 +82,7 @@ if (sortPosts[currentPostIndex - 1]) {
               href={'/' + prevPost.collection + '/' + prevPost.slug}
               title={prevPost.data.title}
             >
-              下一条动态
+              Next Feed
             </a>
             <i class="ri-arrow-right-s-fill float-right"/>
           </div>
