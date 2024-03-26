@@ -4,10 +4,13 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import solid from '@astrojs/solid-js';
 import {remarkModifiedTime} from "./src/remarkPlugin/remark-modified-time.mjs";
+import {resetRemark} from "./src/remarkPlugin/reset-remark.js";
 
 import expressiveCode from "astro-expressive-code";
 import {pluginLineNumbers} from '@expressive-code/plugin-line-numbers'
+
 import {visit} from 'unist-util-visit'
+import {pluginCollapsibleSections} from '@expressive-code/plugin-collapsible-sections'
 
 function customRehypeLazyLoadImage() {
   return function (tree) {
@@ -21,10 +24,9 @@ function customRehypeLazyLoadImage() {
 }
 
 export default defineConfig({
-  site: 'https://jakobnutson.github.io',
-  base: '/astro-yi',
+  site: 'https://aghayev.pro',
   integrations: [sitemap(), tailwind(), solid(), expressiveCode({
-    plugins: [pluginLineNumbers()],
+    plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],
     styleOverrides: {
       codeFontFamily: "jetbrains-mono",
@@ -33,7 +35,7 @@ export default defineConfig({
     themeCssSelector: (theme) => `[data-theme="${theme.type}"]`
   }), mdx()],
   markdown: {
-    remarkPlugins: [remarkModifiedTime],
+    remarkPlugins: [remarkModifiedTime, resetRemark],
     rehypePlugins: [customRehypeLazyLoadImage],
   }
 });

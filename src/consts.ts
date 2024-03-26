@@ -16,13 +16,13 @@
  * beian {string} Chinese policy
  */
 export const site = {
-  title: 'Aghayev Farhat', // required
-  favicon: '/astro-yi/favicon.svg', // required
+  title: 'GRC Lab', // required
+  favicon: '/favicon.svg', // required
   description: 'Welcome to my independent blog website! ',
-  author: "Aghayev.F", // required
-  avatar: '/astro-yi/FT.jpg', // required
+  author: "Aghayev Farhat", // required
+  avatar: '/FT.jpg', // required
   motto: "I'm Farhat Aghayev GRC Practitioner, ITIL 4 Managing Professional.",
-  url: 'https://jakobnutson.github.io/astro-yi',
+  url: 'https://aghayev.pro',
   recentBlogSize: 5,
   archivePageSize: 25,
   postPageSize: 10,
@@ -32,11 +32,15 @@ export const site = {
 
 /**
  * busuanzi {boolean} link: https://busuanzi.ibruce.info/
- * lang {string} Default website language: en | zh-cn
+ * lang {string} Default website language
+ * codeFoldingStartLines {number}
+ * ga {string|false}
  */
 export const config = {
   busuanzi: false,
-  lang: 'en',
+  lang: 'en', // en | zh-cn
+  codeFoldingStartLines: 16 , // Need to re-run the project to take effect
+  ga: false // If you want to integrate with Google Analytics, just enter your GA-ID here.
 }
 
 /**
@@ -50,27 +54,27 @@ export const categories = [
   {
     name: "Blog",
     iconClass: "ri-draft-line",
-    href: "/astro-yi/blog/1",
+    href: "/blog/1",
   },
   {
     name: "Feed",
     iconClass: "ri-lightbulb-flash-line",
-    href: "/astro-yi/feed/1",
+    href: "/feed/1",
   },
   // {
   //   name: "Archive",
   //   iconClass: "ri-archive-line",
-  //   href: "/astro-yi/archive/1",
+  //   href: "/archive/1",
   // },
   // {
   //   name: "Message",
   //   iconClass: "ri-chat-1-line",
-  //   href: "/astro-yi//message",
+  //   href: "/message",
   // },
   {
     name: "Search",
     iconClass: "ri-search-line",
-    href: "/astro-yi/search",
+    href: "/search",
   },
   {
     name: "More",
@@ -80,12 +84,12 @@ export const categories = [
       {
         name: 'About',
         iconClass: 'ri-information-line',
-        href: '/astro-yi/about',
+        href: '/about',
       },
       // {
       //   name: 'Friends',
       //   iconClass: 'ri-user-5-line',
-      //   href: '/astro-yi/friends',
+      //   href: '/friends',
       //   target: '_self',
       // },
     ]
@@ -102,24 +106,19 @@ export const infoLinks = [
     outlink: 'xxxxxxx',
   },
   {
-    icon: 'ri-twitter-fill',
-    name: 'twitter',
-    outlink: 'xxxxxxx',
-  },
-  {
-    icon: 'ri-instagram-fill',
-    name: 'instagram',
-    outlink: 'xxxxxxx',
+    icon: 'ri-linkedin-fill',
+    name: 'linkedin',
+    outlink: 'https://linkedin.com/in/farhat-aghayev/',
   },
   {
     icon: 'ri-github-fill',
     name: 'github',
-    outlink: 'https://github.com/cirry',
+    outlink: 'https://github.com/farhat-aghayev',
   },
   {
     icon: 'ri-rss-fill',
     name: 'rss',
-    outlink: 'https://astro-yi-nu.vercel.app/rss.xml',
+    outlink: 'https://aghayev.pro/rss.xml',
   }
 ]
 
@@ -167,10 +166,11 @@ export const friendshipLinks =
  * pageview {boolean} display the number of page views and comments of the article
  * reaction {string | string[]} Add emoji interaction function to the article
  * requiredMeta {string[]}  Set required fields, default anonymous
+ * whiteList {string[]} set some pages not to display reaction
  */
 export const comment = {
   enable: false,
-  serverUrl: "https://xxxxx.xxxxx.app",
+  serverUrl: "https://aghayev.pro",
   lang: 'en',
   pageSize: 20,
   wordLimit: '',
@@ -178,5 +178,5 @@ export const comment = {
   pageview: true,
   reaction: true,
   requiredMeta: ["nick", "mail"],
-  whiteList: ['/message/', '/friends/'], // 开启留言也不显示reaction的页面
+  whiteList: ['/message/', '/friends/'],
 }
