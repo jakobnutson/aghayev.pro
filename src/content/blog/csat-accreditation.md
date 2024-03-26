@@ -5,13 +5,9 @@ date: 2023-09-15
 tags:
   - ISO27001
   - Case
-image: 
-    src: 'astro-yi/csat-logo.svg'
-created: 09 Mar 2024, 2:48
-modified: 09 Mar 2024, 4:22
 ---
-![](/astro-yi/csat-logo.svg)
 
+![](/csat-logo.svg)
 
 CaspianSat specializes in designing and operating satellite communication solutions. The company achieve their goals by using high-efficiency satellite, as well as long-range and high-throughput radio systems, combining them on the base of advanced network technologies.
 

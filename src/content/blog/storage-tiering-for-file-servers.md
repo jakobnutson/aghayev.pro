@@ -4,6 +4,8 @@ decription: The use case for storage optimization activities
 date: 2023-08-31
 ---
 
+![](/data-tiers.png)
+
 ## Intro
 In today's data-driven world, organizations with a decade or more of existence inevitably face the challenge of data restructuring, access rights optimization, and aligning data with the right storage tiers. While structured data management is relatively straightforward, unstructured data can often pose a perplexing challenge. We will explore the rationale behind investing effort into this endeavor and presents a practical example of achieving a more efficient data management strategies.
 
