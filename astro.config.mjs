@@ -24,7 +24,7 @@ function customRehypeLazyLoadImage() {
 }
 
 export default defineConfig({
-  site: 'https://aghayev.pro',
+  site: 'https://jakobnutson.github.io/aghayev.pro/',
   integrations: [sitemap(), tailwind(), solid(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
     themes: ["github-dark", "github-light"],
