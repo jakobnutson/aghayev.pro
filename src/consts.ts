@@ -170,7 +170,7 @@ export const friendshipLinks =
  */
 export const comment = {
   enable: false,
-  serverUrl: "https://aghayev.pro",
+  serverUrl: "https://jakobnutson.github.io/aghayev.pro/",
   lang: 'en',
   pageSize: 20,
   wordLimit: '',
