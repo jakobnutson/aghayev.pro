@@ -22,7 +22,7 @@ export const site = {
   author: "Aghayev Farhat", // required
   avatar: '/FT.jpg', // required
   motto: "I'm Farhat Aghayev GRC Practitioner, ITIL 4 Managing Professional.",
-  url: 'https://aghayev.pro',
+  url: 'https://jakobnutson.github.io/aghayev.pro/',
   recentBlogSize: 5,
   archivePageSize: 25,
   postPageSize: 10,
